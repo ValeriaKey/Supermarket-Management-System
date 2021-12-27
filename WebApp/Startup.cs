@@ -36,6 +36,7 @@ namespace WebApp
             services.AddScoped<ICategoryRepository, CategoryInMemoryRepository>();
             // Dependency Injection for Use Cases and Repositories
             services.AddTransient<IViewCategoriesUseCase, ViewCategoriesUseCase>();
+            services.AddTransient<IAddCategoryUseCase, AddCategoryUseCase>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
