@@ -14,5 +14,6 @@ namespace UseCases.DataStorePluginInterfaces
         void UpdateCategory(Category category);
 
         Category GetCategoryById(int categoryId);
+        void DeleteCategory(int categoryId);
     }
 }
